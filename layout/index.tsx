@@ -49,7 +49,7 @@ export default function RootLayout({
         {/* ✅ Header (Logo - Navbar - Search) */}
         <header
           className={`sticky top-0 z-50 transition-all duration-300 ${
-            isBlur ? "backdrop-blur-md bg-white/60 shadow-sm" : ""
+            isBlur ? "backdrop-blur-md bg-white/50 shadow-sm" : ""
           }`}
         >
           <div className="flex items-center justify-between w-full px-10 py-6">
