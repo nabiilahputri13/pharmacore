@@ -13,7 +13,7 @@ export default function Home() {
     {
       title: "Wardah Skin Science Academy",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...",
-      img: "/wardah.png", // ganti dengan gambar beneran
+      img: "/carousel2.png", // ganti dengan gambar beneran
     },
     {
       title: "Event 2",
@@ -127,41 +127,45 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 px-8 py-12">
-      {/* Left - FAQ */}
-      <div>
-        <h3 className="text-blue-900 font-semibold">FAQ</h3>
-        <h2 className="text-3xl font-bold mt-2">How do I...</h2>
-        <p className="text-gray-500 mt-2">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <div className="mt-6 space-y-3">
-          {[
-            "Take leave of absence",
-            "Request document/letter",
-            "Fill work attendance",
-            "Request office phone",
-            "Get business trip info",
-            "Claim free products",
-            "See employee Benefit",
-          ].map((item, i) => (
-            <button
-              key={i}
-              className="w-full flex items-center justify-start gap-3 px-5 py-3 rounded-lg bg-[#0A2463] text-white hover:bg-blue-800"
-            >
-              <span>📌</span> {item}
-            </button>
-          ))}
-        </div>
-        <button className="mt-3 text-blue-600 font-medium hover:underline">View More</button>
-      </div>
+     <section className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-12 px-16 py-12">
+  {/* Left - FAQ */}
+  <div>
+    <h3 className="text-blue-900 font-semibold">FAQ</h3>
+    <h2 className="text-3xl font-bold mt-2">How do I...</h2>
+    <p className="text-gray-500 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+    <div className="mt-6 space-y-3">
+      {[
+        "Take leave of absence",
+        "Request document/letter",
+        "Fill work attendance",
+        "Request office phone",
+        "Get business trip info",
+        "Claim free products",
+        "See employee Benefit",
+      ].map((item, i) => (
+        <button
+          key={i}
+          className="w-full flex items-center justify-start gap-3 px-5 py-3 rounded-lg bg-[#0A2463] text-white hover:bg-blue-800"
+        >
+          <span>📌</span> {item}
+        </button>
+      ))}
+    </div>
+    <button className="mt-3 text-blue-600 font-medium hover:underline">View More</button>
+  </div>
 
-      {/* Right - News & Update */}
-      <div>
-        <h3 className="text-blue-900 font-semibold">News & Update</h3>
-        <Carousel2 items={news} />
-      </div>
-    </section>
+  {/* Garis pemisah */}
+  <div className="w-px bg-gray-300 hidden md:block"></div>
+
+  {/* Right - News & Update */}
+  <div>
+    <h3 className="text-blue-900 font-semibold">News & Update</h3>
+    <Carousel2 items={news} />
+  </div>
+</section>
+
     </div>
   )
 }

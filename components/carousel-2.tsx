@@ -24,13 +24,13 @@ export default function Carousel2({ items }: CarouselProps) {
     <div className="w-full">
       <h2 className="text-3xl font-bold mt-2">{items[index].title}</h2>
 
-      <div className="relative mt-4">
+      <div className="relative mt-4 flex justify-center">
         <Image
           src={items[index].img}
           alt={items[index].title}
           width={500}
           height={300}
-          className="rounded-xl shadow"
+          className=""
         />
         <button
           onClick={prev}
