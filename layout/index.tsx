@@ -69,7 +69,7 @@ export default function RootLayout({
             </div>
 
             {/* Button kanan */}
-            <ButtonBlue>Search</ButtonBlue>
+            <ButtonBlue>Search </ButtonBlue>
           </div>
         </header>
 

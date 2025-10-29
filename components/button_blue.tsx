@@ -12,7 +12,7 @@ export default function ButtonBlue({ children, onClick, className }: ButtonBlueP
   return (
     <button
       onClick={onClick}
-      className={`bg-[#0A2463] text-white text-sm px-6 py-2 rounded-full hover:bg-[#081a4d] transition ${className || ''}`}
+      className={`bg-[#0A2463] text-white text-sm px-6 py-2 rounded-full hover:bg-[#60A5FA] transition ${className || ''}`}
     >
       {children}
     </button>

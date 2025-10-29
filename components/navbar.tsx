@@ -20,28 +20,30 @@ const Navbar = () => {
       name: 'HR Services',
       href: '#',
       dropdown: [
-        { name: 'Payroll', href: '/hr/payroll' },
-        { name: 'Employee Relations', href: '/hr/relations' },
-        { name: 'Training', href: '/hr/training' },
+        { name: 'Workday & Attendance', href: '/hr/workday-attendance' },
+        { name: 'Letters', href: '/hr/letters' },
+        { name: 'Leave', href: '/hr/leave' },
+        { name: 'Business Trip', href: '/hr/business-trip' },
       ],
     },
     {
       name: 'Compensation & Benefit',
       href: '#',
       dropdown: [
-        { name: 'Health Insurance', href: '/benefit/insurance' },
-        { name: 'Retirement Plan', href: '/benefit/retirement' },
+        { name: 'Free Product', href: '/benefit/free-product' },
+        { name: 'Learning Wallet', href: '/benefit/learning-wallet' },
+        { name: 'Wedding Gift', href: '/benefit/wedding-gift' },
       ],
     },
     {
       name: 'Work Facility',
       href: '#',
       dropdown: [
-        { name: 'Office Setup', href: '/facility/office' },
-        { name: 'Meeting Rooms', href: '/facility/meeting' },
+        { name: 'Office Handhone', href: '/facility/office-handphone' },
+        { name: 'Office Laptop', href: '/facility/office-laptop' },
       ],
     },
-    { name: 'App & System', href: '/apps' },
+    { name: 'App & System', href: '/app-system' },
     {
       name: 'Recruitment',
       href: '#',

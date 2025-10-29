@@ -31,8 +31,8 @@ export default function Footer() {
       </div>
 
       {/* Copyright */}
-      <div className="mt-12 border-t border-gray-500 pt-6 text-center text-sm text-gray-200">
-        © 2025 Clairc. All rights reserved.
+      <div className="mt-12 border-t border-gray-500 pt-12 text-center text-sm text-gray-200">
+        © 2025 Pharmacore. All rights reserved.
       </div>
     </footer>
   )
