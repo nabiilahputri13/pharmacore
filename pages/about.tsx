@@ -195,21 +195,141 @@ export default function Home() {
         </motion.div>
       </motion.section>
 
-      {/* SECTION 3 (kosong tapi motion-ready) */}
       <motion.section
-        variants={container}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.2 }}
-        className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] gap-12 px-16 py-12"
+  variants={container}
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.2 }}
+  className="px-16 py-12"
+>
+  <motion.h1
+    variants={item}
+    className="text-2xl md:text-3xl font-semibold text-gray-900 text-center mb-12"
+  >
+    Our Brands
+  </motion.h1>
+
+  <motion.div
+    variants={item}
+    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+  >
+    {/* Brand 1 */}
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      className="bg-teal-50 rounded-2xl p-6 flex flex-col items-center text-center shadow-md"
+    >
+      <img
+        src="/wardah.png"
+        alt="Brand 1"
+        className="w-24 h-24 object-contain mb-4"
+      />
+      <h2 className="text-xl font-semibold text-gray-900">Wardah</h2>
+      <p className="text-gray-600 mt-2 mb-4 text-sm">
+        Wardah is a pioneer of halal cosmetics in Indonesia that combines natural purity with a halal, modern, and reliable process to produce high-quality halal products with international innovation standards. Through love, respect and appreciation, we are committed to getting women love themselves and making true beauty shines.
+      </p>
+      <a
+        href="https://www.wardahbeauty.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center text-gray-800 font-medium hover:text-gray-600 transition"
       >
-        <motion.div
-          variants={item}
-          className="bg-gray-100 rounded-xl p-8 text-center text-gray-700"
+        Visit Website
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-5 h-5 ml-1"
         >
-          Coming soon...
-        </motion.div>
-      </motion.section>
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13.5 4.5H19.5V10.5M19.5 4.5L10.5 13.5M4.5 19.5L19.5 4.5"
+          />
+        </svg>
+      </a>
+    </motion.div>
+
+    {/* Brand 2 */}
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      className="bg-pink-100 rounded-2xl p-6 flex flex-col items-center text-center shadow-md"
+    >
+      <img
+        src="/emina.png"
+        alt="Brand 2"
+        className="w-24 h-24 object-contain mb-4"
+      />
+      <h2 className="text-xl font-semibold text-gray-900">Emina</h2>
+      <p className="text-gray-600 mt-2 mb-4 text-sm">
+        For Emina, every day is a new opportunity to be greeted with enthusiasm and passion. Emina's range of skincare and make-up are very easy to apply for teenagers and new makeup users. Emina will help you radiate positive energy every day with happy and healthy skin!
+      </p>
+      <a
+        href="https://www.eminacosmetics.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center text-gray-800 font-medium hover:text-gray-600 transition"
+      >
+        Visit Website
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-5 h-5 ml-1"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13.5 4.5H19.5V10.5M19.5 4.5L10.5 13.5M4.5 19.5L19.5 4.5"
+          />
+        </svg>
+      </a>
+    </motion.div>
+
+    {/* Brand 3 */}
+    <motion.div
+      whileHover={{ scale: 1.03 }}
+      className="bg-blue-100 rounded-2xl p-6 flex flex-col items-center text-center shadow-md"
+    >
+      <img
+        src="/tavi.jpg"
+        alt="Brand 3"
+        className="w-24 h-24 object-contain mb-4"
+      />
+      <h2 className="text-xl font-semibold text-gray-900">Tavi</h2>
+      <p className="text-gray-600 mt-2 mb-4 text-sm">
+        TAVI was born from a hybrid of creative minds that value exploration with thoughtfulness of scientists that always sparks curiosity. Since creativity is in our DNA, we are genuinely invested in exploring out of the box approaches to create unpredictable combo of powerful ingredients to deliver effective and gentle formulas. In addition, we respect the planet as much as we do your skin.
+      </p>
+      <a
+        href="https://www.tavi-world.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-flex items-center text-gray-800 font-medium hover:text-gray-600 transition"
+      >
+        Visit Website
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={1.5}
+          stroke="currentColor"
+          className="w-5 h-5 ml-1"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M13.5 4.5H19.5V10.5M19.5 4.5L10.5 13.5M4.5 19.5L19.5 4.5"
+          />
+        </svg>
+      </a>
+    </motion.div>
+  </motion.div>
+</motion.section>
+
+
     </div>
   )
 }
